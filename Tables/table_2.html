@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Table- row, column span</title>
+    <style>
+      table,
+      td,
+      tr {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Column Span</h1>
+    <table>
+      <tr>
+        <td>User Id</td>
+        <td>Name</td>
+        <td colspan="2">Contact Details</td>
+        <td>Signup Date</td>
+        <td>Course Purchased?</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Sri</td>
+        <td>sample1@gmail.com</td>
+        <td>1234567891</td>
+        <td>09-09-2024</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Harsha</td>
+        <td>sample2@gmail.com</td>
+        <td>789456123</td>
+        <td>10-09-2024</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Akshintala</td>
+        <td>sample3@gmail.com</td>
+        <td>4567891231</td>
+        <td>10-10-2024</td>
+        <td>Yes</td>
+      </tr>
+    </table>
+
+    <hr />
+    <h1>Row Span</h1>
+    <table>
+      <tr>
+        <td>User Id</td>
+        <td>Name</td>
+        <td colspan="2">Contact Details</td>
+        <td>Signup Date</td>
+        <td>Course Purchased?</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Sri</td>
+        <td>sample1@gmail.com</td>
+        <td>1234567891</td>
+        <td>09-09-2024</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Harsha</td>
+        <td>sample2@gmail.com</td>
+        <td>789456123</td>
+        <td>10-09-2024</td>
+        <td rowspan="2">Yes</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Akshintala</td>
+        <td>sample3@gmail.com</td>
+        <td>4567891231</td>
+        <td>10-10-2024</td>
+      </tr>
+    </table>
+  </body>
+</html>

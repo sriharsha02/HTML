@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSS- Flex and Grid</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Nunito";
+      }
+      .header,
+      main {
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        width: 75%;
+        margin: auto;
+        align-items: center;
+      }
+      .nav-items {
+        display: flex;
+      }
+      li {
+        list-style: none;
+        margin-right: 10px;
+      }
+      .logo {
+        margin-left: 10px;
+      }
+      .steps-section {
+        background-color: rgb(76, 165, 165);
+        margin-top: 100px;
+      }
+      .steps {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 30px;
+        margin: 10px;
+
+        .card {
+          background-color: #fff;
+          border-radius: 10px;
+          padding: 15px;
+        }
+      }
+      .text-center {
+        text-align: center;
+      }
+      .mb-200 {
+        margin-bottom: 200px;
+      }
+      .pb-50 {
+        padding-bottom: 50px;
+      }
+      .pt-50 {
+        padding-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h2 class="logo">SOFTWARE SCHOOL</h2>
+
+      <ul class="nav-items">
+        <li>Home</li>
+        <li>Courses</li>
+        <li>Reviews</li>
+        <li>AI</li>
+        <li>My Courses</li>
+        <li>Profile</li>
+      </ul>
+    </div>
+    <div class="steps-section">
+      <div class="main pt-50 mb-200 pb-50">
+        <h2 class="text-center">What you get</h2>
+        <div class="steps">
+          <div class="card">
+            <h5>Dedicated Personal Mentor</h5>
+            <p>
+              1-on-1 guidance with weekly progress reviews and career advice.
+            </p>
+          </div>
+          <div class="card">
+            <h5>Daily Progress Tracker</h5>
+            <p>Track learning, practice consistency, and never fall behind.</p>
+          </div>
+          <div class="card">
+            <h5>Daily Status Calls</h5>
+            <p>
+              Stay accountable every morning with group check-ins and updates.
+            </p>
+          </div>
+          <div class="card">
+            <h5>Real-Time Project Training</h5>
+            <p>Build projects like in real jobs — not just theory.</p>
+          </div>
+          <div class="card">
+            <h5>Bi-Weekly Quizzes & Discussions</h5>
+            <p>Live Zoom sessions to test, revise, and clear concepts.</p>
+          </div>
+          <div class="card">
+            <h5>Monthly Coding Competitions</h5>
+            <p>
+              Challenge-based tasks to boost confidence and win recognition.
+            </p>
+          </div>
+          <div class="card">
+            <h5>1-on-1 Doubt Support</h5>
+            <p>
+              Personal help via WhatsApp, Zoom, or calls — within 24 hrs. No
+              Telegram delays or email-only support.
+            </p>
+          </div>
+          <div class="card">
+            <h5>4 Years Access</h5>
+            <p>
+              Rewatch and revise anytime in your convenient time. Rs. 500 per
+              year after the 3 years
+            </p>
+          </div>
+          <div class="card">
+            <h5>Resume & Interview Preparation</h5>
+            <p>Get job-ready with resume reviews and interview practice.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

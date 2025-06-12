@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS - 3</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Nunito";
+        background-color: #f7faff;
+      }
+      .image {
+        width: 100%;
+      }
+      .card {
+        width: 30%;
+        border: 1px solid black;
+        margin-top: 10px;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      .main {
+        width: 70%;
+        margin: auto;
+      }
+      .round {
+        border-radius: 50%;
+      }
+      .center {
+        text-align: right;
+      }
+      .w-50 {
+        width: 50%;
+      }
+      .mt-50 {
+        margin-top: 50px;
+      }
+      .mb-50 {
+        margin-bottom: 50px;
+      }
+      .chat-icon {
+        width: 100px;
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        background-color: rgb(65, 156, 209);
+      }
+      .search {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        position: relative;
+      }
+      .suggestions {
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <img src="./../Images/1.jpg" alt="" class="image" />
+      <div class="card">
+        <img src="./../Images/1.jpg" alt="" class="image" />
+        <h3>React UI Developer</h3>
+        <p>HTML, CSS, Bootstrap, TypeScript, React, Git, Website Hosting</p>
+        <ul>
+          <li>3 months duration</li>
+          <li>Real-time concepts</li>
+          <li>Beginner to job-ready</li>
+          <li>Industry experts as tutors</li>
+        </ul>
+      </div>
+      <div class="w-50 center">
+        <img src="./../Images/2.jpg" alt="" class="round" />
+      </div>
+      <div class="center">
+        <h1>Job Oriented Courses</h1>
+      </div>
+      <div class="mt-50 mb-50">
+        <p>Sample Text</p>
+      </div>
+      <div class="chat-icon">Chat With Us</div>
+      <div class="search">
+        <input type="text" placeholder="Search" />
+        <div class="suggestions">
+          <div>Gangarajapuram</div>
+          <div>Raghavarajapuram</div>
+          <div>Railway Koduru</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
