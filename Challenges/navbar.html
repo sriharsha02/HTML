@@ -6,14 +6,47 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <style>
+      body {
+        font-family: "Nunito", sans-serif;
+        font-weight: 700;
+      }
+      .navbar {
+        display: flex;
+        background-color: black;
+        /* color: white; */
+        align-items: center;
+        height: 50px;
+      }
+      .navbar-menu {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        padding: 5px;
+      }
+      li {
+        list-style: none;
+      }
+      .navbar a {
+        display: flex;
+        height: 100%;
+        text-decoration: none;
+        color: white;
+        transition: background-color 0.3s;
+      }
+      .navbar a:hover {
+        background-color: rgb(235, 219, 8);
+        border-radius: 5px;
+      }
+    </style>
   </head>
   <body>
-    <div>
-      <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Services</li>
-        <li>Contact</li>
+    <div class="navbar">
+      <ul class="navbar-menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
     </div>
   </body>
