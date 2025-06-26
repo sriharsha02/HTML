@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+      async function login() {
+        let response = await axios.get("https://www.softwareschool.co/courses");
+        console.log(response);
+      }
+      login();
+
+      async function getProduct() {
+        let response = await axios.get("https://dummyjson.com/products/1");
+        console.log(response);
+      }
+      getProduct();
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>Async Await</h3>
+  </body>
+</html>
