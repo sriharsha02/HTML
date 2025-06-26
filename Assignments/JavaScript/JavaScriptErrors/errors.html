@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+      try {
+        async function login() {
+          let loginDetails = {
+            email: "sample.sample@gmail.com",
+            password: "22345655",
+          };
+          let response = axios.post(
+            "https://dummyjson.com/auth/login",
+            loginDetails
+          );
+        }
+        async function signup() {
+          let loginDetails = {
+            email: "sample.sample@gmail.com",
+            password: "22345655",
+          };
+          //   let response = axios.post(
+          //     "https://dummyjson.com/auth/login",
+          //     loginDetails
+          //   );
+        }
+        async function addToCar() {
+          let prod = {
+            id: 1,
+            type: "mobile",
+          };
+          let response = axios.post(
+            "'https://dummyjson.com/products/add'",
+            prod
+          );
+        }
+        async function deleteFromWishList() {
+          let response = await axios.delete();
+        }
+      } catch (err) {
+        console.log(err);
+      }
+    </script>
+  </body>
+</html>
